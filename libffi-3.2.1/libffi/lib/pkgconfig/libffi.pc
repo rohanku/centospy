@@ -1,0 +1,11 @@
+prefix=/home/cc/ee147/fl21/class/ee147-aaf/software/libffi-3.2.1/libffi
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${exec_prefix}/lib/../lib64
+includedir=${libdir}/libffi-3.2.1/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.2.1
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

@@ -1,0 +1,12 @@
+prefix=/home/cc/ee147/fl21/class/ee147-aaf/software/python/1
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Readline
+Description: Gnu Readline library for command line editing
+URL: http://tiswww.cwru.edu/php/chet/readline/rltop.html
+Version: 8.0
+Requires.private: termcap
+Libs: -L${libdir} -lreadline
+Cflags: -I${includedir}/readline
